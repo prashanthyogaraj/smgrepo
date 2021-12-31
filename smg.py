@@ -55,3 +55,18 @@ def pattern(inp):
         
     
 pattern(5)
+
+
+def subseq(st,seq):
+    idx=0
+    for i in st:
+        if(idx==len(seq)):
+            break
+        if(seq[idx]==i):
+            idx+=1
+    return idx==len(seq)
+    
+    
+    
+print(subseq("NNNNbTTTTTcNNXXXXT","NTNX"))
+        
