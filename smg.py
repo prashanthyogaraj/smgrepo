@@ -1,5 +1,5 @@
 print("Hello SAMSUNG")
-
+import time
 def d2b(num,l=[]):
     if(num>=1):
         d2b(num//2,l)
@@ -69,4 +69,17 @@ def subseq(st,seq):
     
     
 print(subseq("NNNNbTTTTTcNNXXXXT","NTNX"))
-        
+
+
+def wait_for_secs(sec=10):
+    sec= float(sec/60)
+    end_time=time.time() + 60 * sec
+    print(end_time)
+    count=1
+    while(time.time() < end_time):
+        print(count)
+        time.sleep(1)
+        count+=1
+    
+
+wait_for_secs()
