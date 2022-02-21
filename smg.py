@@ -2,8 +2,6 @@ print("Hello SAMSUNG")
 import time
 import os
 
-=======
->>>>>>> 5d23bfde46c87f293972fe3e95c93f8617b687b4
 def d2b(num,l=[]):
     if(num>=1):
         d2b(num//2,l)
